@@ -1,0 +1,40 @@
+GET http://localhost:3001/api/notes
+
+###
+GET http://localhost:3001/api/notes/23
+
+###
+GET http://localhost:3001/api/notes/64d349d937dc53bfff143539
+
+###
+GET http://localhost:3001/api/notes/64d1a3544c9f8ec0efdeeae2
+
+###
+POST http://localhost:3001/api/notes
+Content-Type: application/json
+
+{
+    "content": "VS code rest client is a pretty handy tool",
+    "important": true
+}
+
+###
+POST http://localhost:3001/api/notes
+Content-Type: application/json
+
+{
+    "content": "Ensure that everything still works",
+    "important": true
+}
+
+###
+POST http://localhost:3001/api/notes
+Content-Type: application/json
+
+{
+    "content": "lol",
+    "important": false 
+}
+
+###
+DELETE http://localhost:3001/api/notes/64d23fab1ebf6b240449cf95
